@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust",
+          "-webkit-text-size-adjust",
+          "text-align: -webkit-match-parent",
+          "text-align: -webkit-match-parent",
+          "text-align: -webkit-match-parent",
+          "-webkit-overflow-scrolling",
+          "-webkit-overflow-scrolling",
+          "-webkit-overflow-scrolling",
+          "text-align: -webkit-match-parent"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 18.6",
+    "not safari <= 18.6"
+  ]
+}
