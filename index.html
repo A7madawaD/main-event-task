@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>let's read</title>
+  </head>
+  <body>
+    <main>
+      <section class=" bg-section">
+        <div class="container">
+      <!--strat of nav bar-->
+      <nav class="navbar navbar-expand-lg fixed-top py-3 px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">دعنا نقراء</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  الصفحه الرائسيه
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الكتب
+                </a>
+                <ul class="dropdown-menu books-menu">
+                  <li><h6 class="dropdown-header">أقسام الكتب</h6></li>
+                  <li><a class="dropdown-item" href="#romantic" >الرومانسية</a>
+                  </li><a class="dropdown-item" href="#Fantasy" > الفانتازيا</a></li>
+                  <li><a class="dropdown-item" href="#drama" > الدراما</a></li>
+                  <li><a class="dropdown-item" href="#crime"> الجريمة</a></li>
+                  <li><a class="dropdown-item" href="#horror"> الرعب</a></li>
+                  <li><a class="dropdown-item" href="#development" > تطوير الذات</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control bg-light text-dark me-2"
+                type="search"
+                placeholder="ابحث عن صديق ..."
+              />
+              <button class="btn btn-outline-light">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--end of nav bar-->
+      <!--start of quote-->
+      <section class="container quote-section">
+        <div class="quote-box">
+          <h3>اقرأ لتعيش ألف حياة قبل أن تموت</h3>
+          <p>أما من لا يقرأ فلا يعيش إلا حياةً واحدة</p>
+        </div>
+      </section>
+      <!--end of quote -->
+      <!-- start of Show off the best-sellers. -->
+      <section class="card mx-auto mt-4 p-0" >
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="photo/book1.png" class="d-block w-100" alt="Library" />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="photo/book2.png" class="d-block w-100" alt="Reading" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="photo/book3.png"
+                class="d-block w-100"
+                alt="Coffee and Book"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="photo/book4.png"
+                class="d-block w-100"
+                alt="Bookshelf"
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="photo/book5.png"
+                class="d-block w-100"
+                alt="Open Book"
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="photo/book6.png"
+                class="d-block w-100"
+                alt="Coffee and Book"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="photo/book7.png"
+                class="d-block w-100"
+                alt="Coffee and Book"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+      <!-- end of Show off the best-sellers. -->
+      </div>
+      </section>
+    <!--romantic-->
+<section class="container my-5"  id="romantic">
+  <div class="section-heading text-center mb-5">
+ <h2 class="section-title text-danger">
+  عالم الروايات الرومانسية
+</h2>
+    <p class="romance-desc">
+      اكتشف مجموعة مختارة من أجمل الروايات الرومانسية التي تأخذك في رحلة
+      مليئة بالمشاعر والقصص التي لا تُنسى.
+    </p>
+  </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  <div class="col">
+   <div class="card book-card h-100">
+      <img src="photo/الرومانسية/الاسود يليق بك.png" class="card-img-top" alt="الأسود يليق بك">
+      <div class="card-body">
+        <h5 class="card-title">الأسود يليق بك</h5>
+   <p class="card-text">
+    قصة حب مليئة بالكبرياء والتحديات، حيث يلتقي العشق بالطموح في أحداث مؤثرة.
+  </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card book-card h-100">
+     <img src="photo/الرومانسية/في قلبي.png" class="card-img-top" alt="في قلبي أنثى عبرية">
+<div class="card-body">
+  <h5 class="card-title">في قلبي أنثى عبرية</h5>
+  <p class="card-text">
+    رواية إنسانية تمزج بين الحب والإيمان والاختلاف الثقافي في قصة مؤثرة.
+  </p>
+</div>
+    </div>
+  </div>
+  <div class="col">
+   <div class="card book-card h-100">
+     <img src="photo/الرومانسية/غربيه الياسمين.png" class="card-img-top" alt="غربة الياسمين">
+
+<div class="card-body">
+  <h5 class="card-title">غربة الياسمين</h5>
+  <p class="card-text">
+    رحلة رومانسية وإنسانية تكشف أثر الغربة على القلب والعلاقات والأحلام.
+  </p>
+</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card book-card h-100">
+     <img src="photo/الرومانسية/هبتا.png" class="card-img-top" alt="هيبتا">
+
+<div class="card-body">
+  <h5 class="card-title">هيبتا</h5>
+  <p class="card-text">
+    رواية تستعرض مراحل الحب المختلفة بأسلوب مشوق يجذب القارئ حتى النهاية.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-5">
+
+<a href="Another page/romantic.html" class="btn btn-danger px-5 py-3 rounded-pill">
+  اكتشف المزيد
+</a>
+</div>
+    </section>
+          <!-- Fantasy -->
+<section class="container my-5" id="Fantasy">
+  <div class="section-heading text-center mb-5">
+    <h2 class="section-title text-success">
+      عالم روايات الفانتازيا
+    </h2>
+
+    <p class="section-desc">
+      انطلق إلى عوالم السحر والممالك الخيالية والكائنات الأسطورية، حيث يمتزج
+      الخيال بالمغامرة في قصص تأخذك إلى أماكن لا حدود لها.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الفانتازيا/ارض زيكولا.png" class="card-img-top" alt="أرض زيكولا">
+        <div class="card-body">
+          <h5 class="card-title">أرض زيكولا</h5>
+          <p class="card-text">
+            رواية فانتازيا شهيرة تدور في عالم تُقاس فيه الثروة بالذكاء بدلاً من المال،
+            مليئة بالمغامرات والمفاجآت.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الفانتازيا/داو.png" class="card-img-top" alt="داو">
+        <div class="card-body">
+          <h5 class="card-title">داو</h5>
+          <p class="card-text">
+            رحلة غامضة تمزج بين الأساطير والفانتازيا، حيث تنكشف أسرار عالم
+            غير مألوف في كل فصل.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الفانتازيا/ظل.png" class="card-img-top" alt="ظل النعيم">
+        <div class="card-body">
+          <h5 class="card-title">ظل النعيم</h5>
+          <p class="card-text">
+            استمرار لأحداث "داو"، بمغامرات أكثر تشويقًا وصراع بين الخير والشر
+            داخل عالم خيالي مميز.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الفانتازيا/كيارا.png" class="card-img-top" alt="لأنها كيرا">
+        <div class="card-body">
+          <h5 class="card-title">لأنها كيرا</h5>
+          <p class="card-text">
+            رواية تمزج بين التاريخ والفانتازيا في حبكة مليئة بالأسرار
+            والمغامرات والأحداث غير المتوقعة.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-5">
+    <a class="btn btn-success px-5 py-3 rounded-pill" href="Another page/Fantasy.html">
+      اكتشف المزيد
+    </a>
+  </div>
+</section>
+          <!-- Drama -->
+<section class="container my-5" id="drama">
+  <div class="section-heading text-center mb-5">
+    <h2 class="section-title text-warning">
+      عالم الروايات الدرامية
+    </h2>
+
+    <p class="section-desc">
+      استمتع بمجموعة من الروايات الدرامية التي تجسد قصصًا إنسانية مؤثرة،
+      وصراعات واقعية، وأحداثًا مليئة بالمشاعر تترك أثرًا في قلب القارئ.
+    </p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الدرامية/1919.png" class="card-img-top" alt="1919">
+        <div class="card-body">
+          <h5 class="card-title">1919</h5>
+          <p class="card-text">
+            رواية لأحمد مراد تمزج بين التاريخ والدراما، وتدور أحداثها في أجواء
+            ثورة 1919 وما صاحبها من صراعات إنسانية وسياسية.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الدرامية/ارني انظر اليك .png" class="card-img-top" alt="أرني أنظر إليك">
+        <div class="card-body">
+          <h5 class="card-title">أرني أنظر إليك</h5>
+          <p class="card-text">
+            رواية لخولة حمدي تناقش الصبر والإيمان والابتلاء، في إطار درامي
+            مليء بالمشاعر والتأملات الإنسانية.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الدرامية/اين المفر.png" class="card-img-top" alt="أين الملتقى">
+        <div class="card-body">
+          <h5 class="card-title">أين الملتقى</h5>
+          <p class="card-text">
+            رحلة إنسانية مؤثرة تجمع بين الحب والفقد والأمل، وتتناول العلاقات
+            الإنسانية بأسلوب درامي عميق.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الدرامية/اكتشفت زوجي في الاتوبيس.png" class="card-img-top" alt="اكتشفت زوجي في الأتوبيس">
+        <div class="card-body">
+          <h5 class="card-title">اكتشفت زوجي في الأتوبيس</h5>
+          <p class="card-text">
+            رواية اجتماعية درامية تكشف كيف يمكن لحدث واحد أن يقلب حياة أسرة
+            رأسًا على عقب ويغير مصير أبطالها.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-5">
+    <a class="btn btn-warning px-5 py-3 rounded-pill" href="drama.html">
+      اكتشف المزيد
+    </a>
+  </div>
+</section>
+<!-- Crime -->
+<section class="container my-5" id="crime">
+  <div class="section-heading text-center mb-5">
+    <h2 class="section-title text-dark">
+      عالم روايات الجريمة والغموض
+    </h2>
+
+    <p class="section-desc">
+      ادخل عالم التحقيقات والأسرار والجرائم المعقدة، حيث تقودك كل صفحة إلى
+      لغز جديد حتى تصل إلى الحقيقة.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الجريمة والغموض/تراب-الماس.png" class="card-img-top" alt="تراب الماس">
+        <div class="card-body">
+          <h5 class="card-title">تراب الماس</h5>
+          <p class="card-text">
+            رواية لأحمد مراد تمزج بين الجريمة والغموض، حيث يجد البطل نفسه وسط
+            سلسلة من الأسرار والجرائم التي تقلب حياته رأسًا على عقب.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الجريمة والغموض/اكتب حتي.png" class="card-img-top" alt="حتى لا يأكلني الشيطان">
+        <div class="card-body">
+          <h5 class="card-title">حتى لا يأكلني الشيطان</h5>
+          <p class="card-text">
+            رواية مليئة بالغموض والصراعات النفسية، تكشف كيف يمكن للأسرار
+            والقرارات الخاطئة أن تغيّر مصير الإنسان.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الجريمة والغموض/مخالب-القط.png" class="card-img-top" alt="مخالب القط">
+        <div class="card-body">
+          <h5 class="card-title">مخالب القط</h5>
+          <p class="card-text">
+            أحداث مشوقة مليئة بالمطاردات والألغاز، حيث يصبح كشف الحقيقة أخطر
+            من مواجهة الجريمة نفسها.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الجريمة والغموض/ش_2_.png" class="card-img-top" alt="خطايا آدم">
+        <div class="card-body">
+          <h5 class="card-title">خطايا آدم</h5>
+          <p class="card-text">
+            رواية تشويق نفسي وجريمة تتناول الجرائم في خطايا السبع مربطه في الاحداث و
+             يعتقد اصحاب تلك الخطايا انهم ضحايا لهم المبررات لضحياهم  </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-5">
+    <a class="btn btn-dark px-5 py-3 rounded-pill" href="crime.html">
+      اكتشف المزيد
+    </a>
+  </div>
+</section>
+ <!-- Horror -->
+<section class="container my-5" id="horror">
+  <div class="section-heading text-center mb-5">
+    <h2 class="section-title  text-black">
+      عالم روايات الرعب
+    </h2>
+    <p class="section-desc">
+      استعد لخوض تجربة مليئة بالغموض والخوف، واكتشف أشهر روايات الرعب التي
+      تجمع بين الأساطير، والأحداث الخارقة، والتشويق الذي لا ينتهي.
+    </p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الرعب/It.png" class="card-img-top" alt="IT">
+        <div class="card-body">
+          <h5 class="card-title">IT</h5>
+          <p class="card-text">
+            تحفة ستيفن كينغ الشهيرة، حيث يواجه مجموعة من الأصدقاء كيانًا مرعبًا
+            يتغذى على مخاوف البشر ويعود كل سبعة وعشرين عامًا.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الرعب/ملائك نصيبين.png" class="card-img-top" alt="ملائكة نصيبين">
+        <div class="card-body">
+          <h5 class="card-title">ملائكة نصيبين</h5>
+          <p class="card-text">
+            رواية تجمع بين الرعب والغموض والأساطير، حيث تتشابك الأحداث الخارقة
+            مع أسرار قديمة في رحلة مشوقة لا تخلو من المفاجآت.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الرعب/خلف-ستار-الموت-دار-إبداع-بيت-الكتب.png" class="card-img-top" alt="خلف ستار الموت">
+        <div class="card-body">
+          <h5 class="card-title">خلف ستار الموت</h5>
+          <p class="card-text">
+            رحلة مرعبة تكشف أسرارًا غامضة خلف عالم الموت، حيث يصبح النجاة
+            تحديًا حقيقيًا مع تصاعد الأحداث المخيفة.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/الرعب/أسطورة النداهة.png" class="card-img-top" alt="أسطورة النداهة">
+        <div class="card-body">
+          <h5 class="card-title">أسطورة النداهة</h5>
+          <p class="card-text">
+            من أشهر روايات الرعب العربية، تستلهم الأسطورة الشعبية للنداهة في
+            حبكة مليئة بالغموض والأحداث المرعبة التي تبقى في الذاكرة.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-5">
+    <a class="btn btn-dark px-5 py-3 rounded-pill" href="horror.html">
+      اكتشف المزيد
+    </a>
+  </div>
+</section> 
+<!-- Self Development -->
+<section class="container my-5" id="development">
+
+  <div class="section-heading text-center mb-5">
+    <h2 class="section-title text-info">
+      عالم كتب تطوير الذات
+    </h2>
+
+    <p class="section-desc">
+      اكتسب مهارات جديدة، وطوّر طريقة تفكيرك، وابنِ عادات تساعدك على النجاح
+      وتحقيق أهدافك في حياتك الشخصية والمهنية.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/تطوير الذات/اقوي.png" class="card-img-top" alt="أنت أقوى">
+        <div class="card-body">
+          <h5 class="card-title">أنت أقوى</h5>
+          <p class="card-text">
+            كتاب يساعدك على اكتشاف قوتك الداخلية، والتغلب على التحديات، وبناء
+            الثقة بالنفس من خلال أفكار عملية وملهمة.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/تطوير الذات/التعلم.png" class="card-img-top " alt="لعبة التعلم">
+        <div class="card-body">
+          <h5 class="card-title">لعبة التعلم</h5>
+          <p class="card-text">
+            يوضح كيف يمكن تحويل عملية التعلم إلى تجربة ممتعة وفعّالة، مع أساليب
+            تساعد على اكتساب المهارات بسرعة واستمرار.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/تطوير الذات/علاج-الاحتراق.png" class="card-img-top" alt="علاج الاحتراق الوظيفي">
+        <div class="card-body">
+          <h5 class="card-title">علاج الاحتراق الوظيفي</h5>
+          <p class="card-text">
+            يقدم حلولًا عملية للتعامل مع ضغوط العمل، واستعادة الحماس والطاقة،
+            وتحقيق توازن صحي بين الحياة والعمل.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card book-card h-100">
+        <img src="photo/تطوير الذات/الكتابه.png" class="card-img-top" alt="فن الكتابة">
+        <div class="card-body">
+          <h5 class="card-title">فن الكتابة</h5>
+          <p class="card-text">
+            دليل يساعد على تطوير مهارات الكتابة، وصياغة الأفكار بأسلوب واضح
+            وجذاب، مع نصائح لتحسين الإبداع والتعبير.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-5">
+    <a class="btn btn-info px-5 py-3 rounded-pill" href="development.html">
+      اكتشف المزيد
+    </a>
+  </div>
+
+</section>
+<!-- footer -->
+<footer class="bg-dark text-light pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Logo -->
+      <div class="col-lg-4 col-md-6">
+        <h3 class="text-primary fw-bold">دعنا نقرأ</h3>
+        <p class="text-secondary w-75">
+          مكتبتك الإلكترونية لاكتشاف أفضل الروايات والكتب في مختلف
+          التصنيفات.
+        </p>
+      </div>
+
+      <!-- الأقسام -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="mb-3">الأقسام</h5>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#romantic" class="nav-link text-secondary p-0 mb-2">
+              الرومانسية
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#Fantasy" class="nav-link text-secondary p-0 mb-2">
+              الفانتازيا
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#drama" class="nav-link text-secondary p-0 mb-2">
+              الدراما
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#crime" class="nav-link text-secondary p-0 mb-2">
+              الجريمة
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#horror" class="nav-link text-secondary p-0 mb-2">
+              الرعب
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#development" class="nav-link text-secondary p-0">
+              تطوير الذات
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- روابط -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="mb-3">روابط سريعة</h5>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-secondary p-0 mb-2">
+              الصفحة الرئيسية
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link text-secondary p-0 mb-2">
+              الكتب الأكثر قراءة
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link text-secondary p-0 mb-2">
+              الكتب الجديدة
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link text-secondary p-0">
+              تواصل معنا
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- تواصل -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="mb-3">تابعنا</h5>
+
+        <div class="d-flex gap-2">
+
+          <a href="#" class="btn btn-outline-light btn-sm">
+         <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-light btn-sm">
+          <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-light btn-sm">
+            <i class="fa-solid fa-x"></i>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <p class="text-center text-secondary mb-0">
+      © 2026 جميع الحقوق محفوظة | دعنا نقرأ
+      <br>
+       Design by <strong>ahmed hazem</strong>
+    </p>
+
+  </div>
+</footer>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
