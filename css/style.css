@@ -237,15 +237,3 @@ main {
   padding: 12px 40px;
 }
 /* end of romantic */
-
-/* start of footer */
-
-footer .nav-link:hover {
-  color: #0d6efd !important;
-}
-
-footer .btn:hover {
-  transform: translateY(-2px);
-  transition: 0.3s;
-}
-/* start of footer */
