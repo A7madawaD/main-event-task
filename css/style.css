@@ -156,7 +156,10 @@ main {
   border-radius: 50px;
   background: #0d6efd;
 }
-
+.hero {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
 /*========== Cards ==========*/
 
 .book-card {
@@ -217,23 +220,100 @@ main {
   font-size: 20px;
 }
 /* end of index */
+
 /* start of romantic */
-.hero {
-  padding: 160px 0 90px;
-  background: #f8f9fa;
+.book {
+  perspective: 1200px;
+}
+.book-inner {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+/* احذفه بعد JavaScript */
+
+.book:hover .book-inner {
+  transform: rotateY(180deg);
 }
 
-.hero h1 {
+.book-front,
+.book-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+.book-front {
+  background: #fff;
+}
+.book-front img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+.book-info {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+/* النجوم */
+.rating {
+  color: #f7b500;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px; /* مسافة من الصورة */
+  margin-bottom: 20px; /* مسافة قبل اسم الرواية */
+}
+.rating span {
+  color: #444;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.book-info h5 {
+  margin: 0 0 10px;
   font-weight: 700;
 }
-
-.hero p {
-  line-height: 2;
-  font-size: 1.15rem;
+.book-info small {
+  color: #777;
+  margin-bottom: 20px;
+}
+.flip-btn {
+  width: 100%;
+  margin-top: auto;
 }
 
-.hero .btn {
-  border-radius: 50px;
-  padding: 12px 40px;
+.book-back {
+  background: #212529;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+}
+.book-back h4 {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.book-back blockquote {
+  font-size: 18px;
+  line-height: 2;
+  color: #ddd;
+  font-style: italic;
+  border-right: 4px solid #dc3545;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+.back-btn {
+  width: 100%;
 }
 /* end of romantic */
