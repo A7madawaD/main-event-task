@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>رعب</title>
+  </head>
+  <body>
+    <!-- ================= Navbar ================= -->
+
+    <nav class="navbar navbar-expand-lg fixed-top py-3 px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">دعنا نقرأ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                الكتب
+              </a>
+
+              <ul class="dropdown-menu books-menu">
+                <li>
+                  <h6 class="dropdown-header">أقسام الكتب</h6>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#romantic">الرومانسية</a>
+                </li>
+                <li><a class="dropdown-item" href="#Fantasy">الفانتازيا</a></li>
+                <li><a class="dropdown-item" href="#drama">الدراما</a></li>
+                <li><a class="dropdown-item" href="#crime">الجريمة</a></li>
+                <li><a class="dropdown-item" href="#horror">الرعب</a></li>
+                <li>
+                  <a class="dropdown-item" href="#development">تطوير الذات</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ابحث عن كتاب..."
+            />
+            <button class="btn btn-outline-light">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Introduction -->
+    <section class="hero text-center">
+      <header class="container">
+        <h1 class="display-4 fw-bold text-danger">عالم روايات الرعب</h1>
+        <p class="lead text-muted mx-auto mt-4" style="max-width: 700px">
+          استعد لخوض تجربة مليئة بالغموض والخوف، واكتشف أشهر روايات الرعب التي
+          تجمع بين الأساطير والأحداث الخارقة والتشويق النفسي في قصص لن تنساها.
+        </p>
+      </header>
+    </section>
+    <!--book card-->
+    <section id="books" class="container my-5">
+      <div class="row g-4">
+        <!-- card1-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" />
+                <div class="book-info">
+                  <div class="rating">
+                    <div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
+                  </div>
+                  <!--name book-->
+                  <h5></h5>
+                  <!--name some one-->
+                  <small></small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>
+                  «أحيانًا يكون الكبرياء هو آخر ما نملكه.»
+                </blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
+                  <h5></h5>
+                  <small></small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>«الحب الحقيقي لا يعرف الحدود.»</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div>
+                  <!--name book-->
+                  <h5></h5>
+                  <!--name some one-->
+                  <small></small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>«الغربة ليست في المكان، بل في القلب.»</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.8</span></div>
+                  <!--name book-->
+                  <h5></h5>
+                  <!--name some one-->
+                  <small></small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>
+                  «الحب له سبع مراحل، ولكل مرحلة حكايتها.»
+                </blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card5 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.6</span></div>
+                  <h5>رواية 5</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 6 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div>
+                  <h5>رواية 6</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 7 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
+                  <h5>رواية 7</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 8 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.5</span></div>
+                  <h5>رواية 8</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 9 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.8</span></div>
+                  <h5>رواية 9</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 10 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
+                  <h5>رواية 10</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 11 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
+                  <h5>رواية 10</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card 12 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="book">
+            <div class="book-inner">
+              <div class="book-front">
+                <img src="" alt="" />
+                <div class="book-info">
+                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
+                  <h5>رواية 10</h5>
+                  <small>اسم الكاتب</small>
+                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+                    اقرأ الاقتباس
+                  </button>
+                </div>
+              </div>
+              <div class="book-back">
+                <h4>اقتباس</h4>
+                <blockquote>ضع اقتباس الرواية هنا.</blockquote>
+                <button
+                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
+                >
+                  رجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Footer  -->
+    <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+      <p class="text-center text-secondary">
+        © 2026 جميع الحقوق محفوظة | دعنا نقرأ
+        <br />
+        Design by <strong>Ahmed Hazem</strong>
+      </p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
