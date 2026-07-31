@@ -8,9 +8,7 @@ body {
   background-color: #f5f7fa;
   font-family: Arial, Helvetica, sans-serif;
 }
-main {
-  padding-top: 120px;
-}
+
 /* start of index */
 /* start of heder */
 .bg-section {
@@ -27,64 +25,75 @@ main {
   color: #0feada !important;
 }
 /* Quote Section */
-.quote-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-  padding-top: 120px;
-  padding-bottom: 60px;
-}
-.quote-box {
-  width: 50%;
-  max-width: 500px;
-  background: #ffffff;
-  border-left: 8px solid #0d6efd;
-  padding: 35px;
-  border-radius: 12px;
-  box-shadow: 0 10px 2px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  border-left: none;
-  border-top: 6px solid #0d6efd;
-}
-.quote-box h3 {
-  color: #0d6efd;
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-.quote-box p {
-  color: #666;
-  font-size: 1.2rem;
-}
-/* Carousel */
-.card {
-  max-width: 800px;
-  margin: 40px auto;
-}
-.carousel {
+.hero-slider {
+  position: relative;
   width: 100%;
-}
-.carousel-item {
-  text-align: center;
-}
-.carousel-item img {
-  width: auto;
-  max-width: 100%;
-  height: 350px;
-  object-fit: contain;
-  margin: auto;
+  height: 90vh;
+  overflow: hidden;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 70%;
-  background-color: #0d6efd;
+.hero-slider .carousel,
+.hero-slider .carousel-inner,
+.hero-slider .carousel-item {
+  height: 100%;
 }
-.carousel-section {
+
+.hero-slider img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  filter: blur(5px);
+
+  transform: scale(1.08);
 }
-.btn {
-  margin-right: 20px !important;
+.hero-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.hero-content {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 5;
+
+  color: white;
+
+  text-align: center;
+
+  width: 90%;
+}
+.hero-content h1 {
+  font-size: 58px;
+
+  font-weight: bold;
+
+  margin-bottom: 25px;
+}
+.hero-content p {
+  font-size: 24px;
+
+  margin-bottom: 35px;
+
+  color: #eee;
+}
+.card-img-top {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.hero-content .btn {
+  padding: 12px 40px;
+
+  font-size: 20px;
 }
 .nav-link {
   color: white !important;
@@ -177,8 +186,8 @@ main {
 }
 
 .book-card img {
-  width: 100%;
-  height: 320px;
+  width: 70%;
+  height: 250px;
   object-fit: cover;
   background: #fff;
   padding: 10px;
@@ -221,21 +230,20 @@ main {
 }
 /* end of index */
 
-/* start of romantic */
+/* start of card */
 .book {
   perspective: 1200px;
+  height: 560px;
+}
+.book:hover .book-inner {
+  transform: rotateY(180deg);
 }
 .book-inner {
   position: relative;
   width: 100%;
-  height: 560px;
+  height: 100%;
   transition: 0.8s;
   transform-style: preserve-3d;
-}
-/* احذفه بعد JavaScript */
-
-.book:hover .book-inner {
-  transform: rotateY(180deg);
 }
 
 .book-front,
@@ -247,43 +255,52 @@ main {
   backface-visibility: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
 }
-.book-front {
-  background: #fff;
-}
+
 .book-front img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
+  width: 85%;
+  height: 320px;
+  object-fit: contain;
+  display: block;
+  margin: 15px auto;
 }
+
 .book-info {
-  height: 220px;
+  height: 185px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 15px 20px;
 }
-/* النجوم */
+
 .rating {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f7b500;
   font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px; /* مسافة من الصورة */
-  margin-bottom: 20px; /* مسافة قبل اسم الرواية */
 }
-.rating span {
-  color: #444;
-  font-weight: bold;
-  margin-right: 8px;
-}
+
 .book-info h5 {
-  margin: 0 0 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 1.15rem;
   font-weight: 700;
 }
+
 .book-info small {
+  height: 24px;
+  display: flex;
+  align-items: center;
   color: #777;
-  margin-bottom: 20px;
+  margin: 0;
 }
+
 .flip-btn {
   width: 100%;
   margin-top: auto;
@@ -293,27 +310,44 @@ main {
   background: #212529;
   color: #fff;
   transform: rotateY(180deg);
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
+  justify-content: space-between;
+
   text-align: center;
+  padding: 25px;
 }
+
 .book-back h4 {
-  margin-bottom: 25px;
+  margin: 0;
+}
+
+.book-back .book-name {
+  font-size: 20px;
   font-weight: bold;
 }
-.book-back blockquote {
-  font-size: 18px;
-  line-height: 2;
-  color: #ddd;
-  font-style: italic;
-  border-right: 4px solid #dc3545;
-  padding-right: 15px;
-  margin-bottom: 30px;
+
+.book-back .author {
+  color: #cfcfcf;
+  margin-bottom: 10px;
 }
+
+.book-back blockquote {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 2;
+  margin: 20px 0;
+  padding: 0 12px;
+  border-right: 4px solid #dc3545;
+  color: #eee;
+}
+
 .back-btn {
   width: 100%;
 }
-/* end of romantic */
+
+/* end of card */
