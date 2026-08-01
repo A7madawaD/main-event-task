@@ -31,3 +31,21 @@ scrollBtn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+//  اضغط زر
+//       ↓
+// addEventListener يلتقط الضغط
+//       ↓
+// this
+// يعرف أي زر ضغطت عليه
+//       ↓
+// closest(".book")
+// يصل للكارت الحالي
+//       ↓
+// querySelector(".book-inner")
+// يصل للجزء الذي سيدور
+//       ↓
+// style.transform
+// يغير قيمة transform
+//       ↓
+// rotateY(180deg)
+// فيظهر ظهر الكارت
