@@ -8,7 +8,9 @@ body {
   background-color: #f5f7fa;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* start of index */
 /* start of heder */
 .bg-section {
@@ -43,7 +45,7 @@ body {
   height: 100%;
   object-fit: cover;
 
-  filter: blur(5px);
+  filter: blur(2px);
 
   transform: scale(1.08);
 }
@@ -235,9 +237,7 @@ body {
   perspective: 1200px;
   height: 560px;
 }
-.book:hover .book-inner {
-  transform: rotateY(180deg);
-}
+
 .book-inner {
   position: relative;
   width: 100%;
@@ -275,12 +275,20 @@ body {
 }
 
 .rating {
-  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f7b500;
+  gap: 4px;
+  color: #ffc107; /* اللون الذهبي */
   font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.rating span {
+  color: #444;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 16px;
 }
 
 .book-info h5 {
@@ -351,3 +359,26 @@ body {
 }
 
 /* end of card */
+/* scrollTopBtn */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  left: 25px; /* لو الموقع عربي */
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #dc3545;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#scrollTopBtn:hover {
+  background: #bb2d3b;
+  transform: translateY(-3px);
+}
