@@ -31,7 +31,9 @@ scrollBtn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-// Search
+// ==========================================
+// 1. مصفوفة جميع الكتب
+// ==========================================
 const books = [
   // Romantic
   { name: "احبك اكثر", page: "romantic.html" },
@@ -74,9 +76,8 @@ const books = [
   { name: "قضية عنب الثعلب", page: "crime.html" },
   { name: "قضية لوز مر", page: "crime.html" },
   { name: "مخالب القط", page: "crime.html" },
-  // أضف هذه الكتب داخل مصفوفة const books = [...] في ملف الـ JS لديك:
 
-  // 👻 قسم الرعب
+  // Horror
   { name: "IT", page: "horror.html" },
   { name: "ارض السافلين", page: "horror.html" },
   { name: "أرض السافلين", page: "horror.html" },
@@ -90,87 +91,67 @@ const books = [
   { name: "الناسخ", page: "horror.html" },
   { name: "انتيخريستوس", page: "horror.html" },
 
-  // 🔮 قسم الفانتازيا (fantasy.html)
+  // Fantasy
   { name: "أرض زيكولا", page: "fantasy.html" },
   { name: "ارض زيكولا", page: "fantasy.html" },
   { name: "جنة في بيت الدودو", page: "fantasy.html" },
   { name: "امارييتا", page: "fantasy.html" },
   { name: "اماريتيا", page: "fantasy.html" },
-  { name: "کیارا", page: "fantasy.html" },
+  { name: "كيارا", page: "fantasy.html" },
   { name: "توك توك الجحيم", page: "fantasy.html" },
   { name: "داو", page: "fantasy.html" },
   { name: "ظل النعيم", page: "fantasy.html" },
-  // 🌱 قسم تطوير الذات
-  { name: "انت اقوي", page: "development.html", id: "انت-اقوي" },
-  { name: "أنت أقوى", page: "development.html", id: "انت-اقوي" },
 
-  { name: "احببت وغدا", page: "development.html", id: "احببت-وغدا" },
-  { name: "أحببت وغداً", page: "development.html", id: "احببت-وغدا" },
-
-  { name: "لعبه التعلم", page: "development.html", id: "لعبه-التعلم" },
-  { name: "لعبة التعلم", page: "development.html", id: "لعبه-التعلم" },
-
-  {
-    name: "علاج الاحتراق الوظيفي",
-    page: "development.html",
-    id: "علاج-الاحتراق-الوظيفي",
-  },
-
-  { name: "فن الكتابه", page: "development.html", id: "فن-الكتابه" },
-  { name: "فن الكتابة", page: "development.html", id: "فن-الكتابه" },
-
-  { name: "تنهيدة", page: "development.html", id: "تنهيدة" },
-  { name: "تنهيده", page: "development.html", id: "تنهيدة" },
-
-  { name: "انت مدين لنفسك", page: "development.html", id: "انت-مدين-نفسك" },
-  { name: "أنت مدين لنفسك", page: "development.html", id: "انت-مدين-نفسك" },
-
-  { name: "فن تفويت الفرص", page: "development.html", id: "فن-تفويت-الفرص" },
-  { name: "ن تفويت الفرص", page: "development.html", id: "فن-تفويت-الفرص" },
+  // Self Development
+  { name: "انت اقوي", page: "development.html" },
+  { name: "أنت أقوى", page: "development.html" },
+  { name: "احببت وغدا", page: "development.html" },
+  { name: "أحببت وغداً", page: "development.html" },
+  { name: "لعبه التعلم", page: "development.html" },
+  { name: "لعبة التعلم", page: "development.html" },
+  { name: "علاج الاحتراق الوظيفي", page: "development.html" },
+  { name: "فن الكتابه", page: "development.html" },
+  { name: "فن الكتابة", page: "development.html" },
+  { name: "تنهيدة", page: "development.html" },
+  { name: "تنهيده", page: "development.html" },
+  { name: "انت مدين لنفسك", page: "development.html" },
+  { name: "أنت مدين لنفسك", page: "development.html" },
+  { name: "فن تفويت الفرص", page: "development.html" },
 ];
 
 // ==========================================
-// 1. مصفوفة جميع الكتب (تأكد من اسم صفحة الفانتازيا الصحيحة)
+// 2. دالة توحيد الحروف
 // ==========================================
-const searchForm = document.getElementById("searchForm");
-const searchInput = document.getElementById("searchInput");
-
-// دالة لتنظيف النصوص العربية من الهمزات والتشكيل لضمان نجاح البحث
 function normalizeText(text) {
   if (!text) return "";
   return text
     .trim()
     .toLowerCase()
-    .replace(/[أإآ]/g, "ا") // توحيد الهمزات
-    .replace(/ة/g, "ه") // توحيد التاء المربوطة
-    .replace(/ـ/g, ""); // إزالة التطويل
+    .replace(/[أإآ]/g, "ا")
+    .replace(/ة/g, "ه")
+    .replace(/ى/g, "ي")
+    .replace(/ـ/g, "");
 }
 
+// ==========================================
+// 3. دالة تحديد الكارت في الصفحة الحالية
+// ==========================================
 function highlightCard(query) {
-  // 1. التعديل المهم: استخدام كلاس يطابق أجزاء Bootstrap مثل col-12
   const cards = document.querySelectorAll('[class*="col-"]');
   let found = false;
 
   const cleanQuery = normalizeText(query);
 
   cards.forEach((card) => {
-    // التأكد أن العنصر المُستهدف هو فعلاً كارت كتاب يحتوي على class book
     if (!card.querySelector(".book")) return;
 
     card.classList.remove("highlight");
     const title = card.querySelector("h5");
-
     const cleanTitle = title ? normalizeText(title.textContent) : "";
-    const cleanCardId = card.id
-      ? normalizeText(card.id.replace(/-/g, " "))
-      : "";
 
-    // 2. المطابقة
-    if (
-      (cleanTitle && cleanTitle.includes(cleanQuery)) ||
-      (cleanCardId && cleanCardId.includes(cleanQuery))
-    ) {
+    if (cleanTitle && cleanTitle.includes(cleanQuery)) {
       found = true;
+      // التمرير السلس نحو الكارت المحظوظ
       card.scrollIntoView({ behavior: "smooth", block: "center" });
       card.classList.add("highlight");
     }
@@ -179,31 +160,56 @@ function highlightCard(query) {
   return found;
 }
 
+// ==========================================
+// 4. دالة البحث والتوجيه
+// ==========================================
 function searchBook(searchTerm) {
-  const cleanTerm = searchTerm.trim().toLowerCase();
-
+  const cleanTerm = normalizeText(searchTerm);
   if (!cleanTerm) return;
 
-  // البحث عن الكتاب (سواء كان الاسم يطابق أو يحتوي على الكلمة)
-  const foundBook = books.find((book) =>
-    book.name.toLowerCase().includes(cleanTerm),
-  );
+  // أولاً: ابحث في الصفحة الحالية
+  const foundInCurrent = highlightCard(cleanTerm);
 
-  if (foundBook) {
-    if (foundBook.id) {
-      window.location.href = `${foundBook.page}#${foundBook.id}`;
+  // ثانياً: إذا لم يجد الرواية في الصفحة الحالية، انتقل لصفحتها مع إرسال اسمها
+  if (!foundInCurrent) {
+    const foundBook = books.find((book) =>
+      normalizeText(book.name).includes(cleanTerm),
+    );
+
+    if (foundBook) {
+      // إرسال كلمة البحث في الرابط لكي تُقرأ في الصفحة القادمة
+      window.location.href = `${foundBook.page}?search=${encodeURIComponent(searchTerm)}`;
     } else {
-      window.location.href = foundBook.page;
+      alert("الرواية غير موجودة!");
     }
-  } else {
-    alert("الرواية غير موجودة!");
   }
 }
 
-// التمرير التلقائي للرواية عند التحويل من صفحة أخرى
-window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.hash) {
-    const targetBookId = decodeURIComponent(window.location.hash.substring(1));
-    highlightCard(targetBookId.replace(/-/g, " "));
+// ==========================================
+// 5. الأحداث عند التحميل وإرسال البحث
+// ==========================================
+document.addEventListener("DOMContentLoaded", function () {
+  const searchForm = document.getElementById("searchForm");
+  const searchInput = document.getElementById("searchInput");
+
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // 🛑 إيقاف السلوك الافتراضي لإعادة التوجيه إلى الصفحة الرئيسية
+
+      if (searchInput && searchInput.value.trim() !== "") {
+        searchBook(searchInput.value);
+      }
+    });
+  }
+
+  // قراءة كلمة البحث والتظليل عند الانتقال من صفحة لصفحة أخرى
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchQuery = urlParams.get("search");
+
+  if (searchQuery) {
+    highlightCard(searchQuery);
+    if (searchInput) {
+      searchInput.value = searchQuery;
+    }
   }
 });
