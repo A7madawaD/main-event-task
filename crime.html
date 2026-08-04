@@ -41,7 +41,7 @@
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="#romantic">الرومانسية</a>
+                  <a class="dropdown-item" href="romantic.html">الرومانسية</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="Fantasy.html">الفانتازيا</a>
@@ -60,14 +60,18 @@
   </li>
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="ابحث عن كتاب..."
-            />
-            <button class="btn btn-outline-light">Search</button>
-          </form>
+<form class="d-flex w-50 " id="searchForm">
+  <input
+    id="searchInput"
+    class="form-control "
+    type="search"
+    placeholder="ابحث عن رواية..."
+  />
+
+  <button class="btn btn-outline-light m-2 " type="submit">
+    Search
+  </button>
+</form>
         </div>
       </div>
     </nav>
@@ -84,342 +88,239 @@
 
     <!--book card-->
     <section id="books" class="container my-5">
-      <div class="row g-4">
-        <!-- card1-->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/005.png"
-                />
-                <div class="book-info">
-                  <div class="rating">
-                    <div class="rating mb-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <span>5.0</span>
-                    </div>
-                  </div>
-                  <h5>005</h5>
-                  <small>شهد قربان</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
+<div class="row g-4">
+    <!-- card 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/005.png" alt="005" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
               </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "تظاهر بأنك بخير دائمًا مهما عصفت بك الحياة، فالكتمان أجمل
-                  بكثير من شفقة الآخرين عليك!"
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
+              <h5>005</h5>
+              <small>شهد قربان</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
             </div>
           </div>
-        </div>
-        <!--card 2 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/اكتب حتي.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-                  <h5>اكتب حتي لا ياكلني الشيطان</h5>
-                  <small>مريم الحيسي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  « من الغريب أن أغلب البشر يحبون هذه الأجواء الغريبة التي تتحدث
-                  عن الجن والأشباح والشياطين والأماكن المسكونة! يخافون المجهول
-                  كثيراً لكنهم لا يخافون بعضهم من بعض والحقيقة أن بعضهم هم أشد
-                  رعباً من الوحوش»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card3 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/الفيل-الازرق.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-
-                  <h5>الفيل الازرق</h5>
-                  <!--name some one-->
-                  <small>احمد مراد</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «“أنا فُتات إنسان يتظاهر أنه على قيد الحياة وهو ليس كذلك...
-                  أنا الذي يتنفس ويأكُل وينَام بقوة الدفع.. أنا ساعة بدون
-                  عقْرب.. أنا يُونس في بطن حُوت كافر لن يَلفظني عند جزيرة..” »
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 4 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/تراب-الماس.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-
-                  <h5>تراب الماس</h5>
-                  <small>احمد مراد</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «ساعات بنضطر نعمل غلطات صغيرة نصلّح بيها غلطات أكبر»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card5 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/دليل-جديتي-لقتل-الاوغاد.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-                  <h5>دليل جديتي لقتل الأوغاد</h5>
-                  <small>ميرنا المهدي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «بالطبع لم أشك في قاتل غير جدتي! ليس لأنها الوحيدة في بيتنا
-                  التي تملك سلاحًا احترفت استعماله منذ أيام شبابها، وليس لأننا
-                  نعلم أنها قتلت زوجها السابق، بل لأنها فور أن رأت الجثة، ربتت
-                  على ظهري وقابلت نظراتي المرتاعة بابتسامة حنون وكأنها تقول لي:
-                  جثة هذا الوغد هي هدية تفوقك في الثانوية العامة. اسعَد يا
-                  عيسى!»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 6 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/ش_2_.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-                  <h5>خطايا آدم</h5>
-                  <small>احمد مسعد & سامي مشيل </small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  ""ليس كل من ينصحك محباً لك، فخطيئة آدم كانت نصيحة إبليس!!""
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 7 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/مخالب-القط.png"
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-                  <h5>مخالب القط</h5>
-                  <small>نوح الالفي </small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "حين تصبح القضية شخصية… يتحوّل البحث عن الحقيقة إلى صراع
-                  للبقاء"
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 8 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الجريمة والغموض/صديقي-السيكوباتي.png"
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.5</span>
-                  </div>
-                  <h5>صديقي السيكوباتي</h5>
-                  <small>ميرنا المهدي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "مش إحنا اللي سيكوباتيين، المجتمع هو اللي عايش دور الضحية"
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>"تظاهر بأنك بخير دائمًا مهما عصفت بك الحياة، فالكتمان أجمل بكثير من شفقة الآخرين عليك!"</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/اكتب حتي.png" alt="اكتب حتى لا يأكلني الشيطان" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>اكتب حتى لا يأكلني الشيطان</h5>
+              <small>مريم الحيسي</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«من الغريب أن أغلب البشر يحبون هذه الأجواء الغريبة... والحقيقة أن بعضهم هم أشد رعباً من الوحوش»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/الفيل-الازرق.png" alt="الفيل الأزرق" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>الفيل الأزرق</h5>
+              <small>أحمد مراد</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«أنا فُتات إنسان يتظاهر أنه على قيد الحياة وهو ليس كذلك...»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/تراب-الماس.png" alt="تراب الماس" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>تراب الماس</h5>
+              <small>أحمد مراد</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«ساعات بنضطر نعمل غلطات صغيرة نصلّح بيها غلطات أكبر»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 5 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/دليل-جديتي-لقتل-الاوغاد.png" alt="دليل جدتي لقتل الأوغاد" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>دليل جدتي لقتل الأوغاد</h5>
+              <small>ميرنا المهدي</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«بالطبع لم أشك في قاتل غير جدتي! ليس لأنها الوحيدة في بيتنا التي تملك سلاحًا...»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 6 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/ش_2_.png" alt="خطايا آدم" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>خطايا آدم</h5>
+              <small>أحمد مسعد & سامي ميشيل</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«ليس كل من ينصحك محباً لك، فخطيئة آدم كانت نصيحة إبليس!!»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 7 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/مخالب-القط.png" alt="مخالب القط" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>مخالب القط</h5>
+              <small>نوح الألفي</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>"حين تصبح القضية شخصية… يتحوّل البحث عن الحقيقة إلى صراع للبقاء"</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 8 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الجريمة والغموض/صديقي-السيكوباتي.png" alt="صديقي السيكوباتي" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.5</span>
+              </div>
+              <h5>صديقي السيكوباتي</h5>
+              <small>ميرنا المهدي</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>"مش إحنا اللي سيكوباتيين، المجتمع هو اللي عايش دور الضحية"</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     </section>
     <!-- scrollTopBtn -->
     <button id="scrollTopBtn">

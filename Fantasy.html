@@ -39,7 +39,7 @@
                   <h6 class="dropdown-header">أقسام الكتب</h6>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#romantic">الرومانسية</a>
+                  <a class="dropdown-item" href="romantic.html">الرومانسية</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="Fantasy.html">الفانتازيا</a>
@@ -58,14 +58,18 @@
   </li>
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="ابحث عن كتاب..."
-            />
-            <button class="btn btn-outline-light">Search</button>
-          </form>
+<form class="d-flex w-50 " id="searchForm">
+  <input
+    id="searchInput"
+    class="form-control "
+    type="search"
+    placeholder="ابحث عن رواية..."
+  />
+
+  <button class="btn btn-outline-light m-2 " type="submit">
+    Search
+  </button>
+</form>
         </div>
       </div>
     </nav>
@@ -83,324 +87,239 @@
     </section>
     <!--book card-->
     <section id="books" class="container my-5">
-      <div class="row g-2">
-        <!-- card1-->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/ارض زيكولا.png"
-                />
-                <div class="book-info">
-                  <div class="rating">
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                      <span>4.7</span>
-                    </div>
-                  </div>
-                  <h5>أرض زيكولا</h5>
-                  <small>عمرو عبد الحميد</small>
-
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
+     <div class="row g-4">
+    <!-- card 1 -->
+    <div class="col-12 col-md-6 col-lg-3" id="أرض-زيكولا">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/ارض زيكولا.png" alt="أرض زيكولا" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
               </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «في زيكولا لا تُقاس قيمة الإنسان بالمال، بل بما يملكه من
-                  ذكاء.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
+              <h5>أرض زيكولا</h5>
+              <small>عمرو عبد الحميد</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
             </div>
           </div>
-        </div>
-        <!--card 2 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/الدودو.png"
-                />
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-                  <h5>جنة في بيت الدودو</h5>
-                  <small>منى سلامة</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «أحيانًا يكون الطريق إلى الحقيقة أغرب من الخيال نفسه.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card3 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/اماريتيا.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.7</span>
-                  </div>
-                  <h5>امارييتا</h5>
-                  <small>عمرو عبدالحميد</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «في بعض المدن... يكون النجاة ثمنها أغلى من الحياة نفسها.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 4 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/كيارا.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.7</span>
-                  </div>
-                  <h5>كيارا</h5>
-                  <small>سما سامي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «ليست كل التيجان تصنع الملوك... وبعضها يصنع الحروب.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card5 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/توك توك الجحيم .png"
-                />
-
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.7</span>
-                  </div>
-                  <h5>توك توك الجحيم</h5>
-
-                  <small>أحمد مسعد</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «بعض الرحلات تبدأ بخطوة... وتنتهي في مكان لم تتخيل وجوده.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 6 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/داو.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div>
-                  <h5>داو</h5>
-                  <small>دعاء عبد الرحمن</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «الخوف لا يصنع الوحوش... لكنه يمنحها القوة.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 7-->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/ظل.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.7</span>
-                  </div>
-                  <h5>ظل النعيم</h5>
-                  <small>دعاء عبد الرحمن</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «كل باب يُفتح يقود إلى اختيار... وليس كل اختيار نجاة.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 8 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الفانتازيا/قواعد.png"
-                />
-
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.7</span>
-                  </div>
-                  <h5>قواعد جارتين</h5>
-                  <small>عمرو عبد الحميد</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  «لكل أرض قوانينها... ومن يجهلها يدفع الثمن مهما بلغت قوته.»
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«في زيكولا لا تُقاس قيمة الإنسان بالمال، بل بما يملكه من ذكاء.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="col-12 col-md-6 col-lg-3" id="جنة-في-بيت-الدودو">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/الدودو.png" alt="جنة في بيت الدودو" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <h5>جنة في بيت الدودو</h5>
+              <small>منى سلامة</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«أحيانًا يكون الطريق إلى الحقيقة أغرب من الخيال نفسه.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="col-12 col-md-6 col-lg-3" id="امارييتا">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/اماريتيا.png" alt="امارييتا" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
+              </div>
+              <h5>امارييتا</h5>
+              <small>عمرو عبدالحميد</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«في بعض المدن... يكون النجاة ثمنها أغلى من الحياة نفسها.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="col-12 col-md-6 col-lg-3" id="كيارا">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/كيارا.png" alt="كيارا" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
+              </div>
+              <h5>كيارا</h5>
+              <small>سما سامي</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«ليست كل التيجان تصنع الملوك... وبعضها يصنع الحروب.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 5 -->
+    <div class="col-12 col-md-6 col-lg-3" id="توك-توك-الجحيم">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/توك توك الجحيم .png" alt="توك توك الجحيم" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
+              </div>
+              <h5>توك توك الجحيم</h5>
+              <small>أحمد مسعد</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«بعض الرحلات تبدأ بخطوة... وتنتهي في مكان لم تتخيل وجوده.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 6 -->
+    <div class="col-12 col-md-6 col-lg-3" id="داو">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/داو.png" alt="داو" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
+              </div>
+              <h5>داو</h5>
+              <small>دعاء عبد الرحمن</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«الخوف لا يصنع الوحوش... لكنه يمنحها القوة.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 7 -->
+    <div class="col-12 col-md-6 col-lg-3" id="ظل-النعيم">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/ظل.png" alt="ظل النعيم" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
+              </div>
+              <h5>ظل النعيم</h5>
+              <small>دعاء عبد الرحمن</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«كل باب يُفتح يقود إلى اختيار... وليس كل اختيار نجاة.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 8 -->
+    <div class="col-12 col-md-6 col-lg-3" id="قواعد-جارتين">
+      <div class="book">
+        <div class="book-inner">
+          <div class="book-front">
+            <img class="book-cover card-img-top" src="photo/الفانتازيا/قواعد.png" alt="قواعد جارتين" />
+            <div class="book-info">
+              <div class="rating mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.7</span>
+              </div>
+              <h5>قواعد جارتين</h5>
+              <small>عمرو عبد الحميد</small>
+              <button class="btn btn-danger rounded-pill mt-2 flip-btn">اقرأ الاقتباس</button>
+            </div>
+          </div>
+          <div class="book-back">
+            <h4>اقتباس</h4>
+            <blockquote>«لكل أرض قوانينها... ومن يجهلها يدفع الثمن مهما بلغت قوته.»</blockquote>
+            <button class="btn btn-outline-light rounded-pill mt-3 back-btn">رجوع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     </section>
     <!-- scrollTopBtn -->
     <button id="scrollTopBtn">

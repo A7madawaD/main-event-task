@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="#romantic">الرومانسية</a>
+                  <a class="dropdown-item" href="romantic.html">الرومانسية</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="Fantasy.html">الفانتازيا</a>
@@ -62,14 +62,17 @@
           </li>
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="ابحث عن كتاب..."
-            />
-            <button class="btn btn-outline-light">Search</button>
-          </form>
+<form class="d-flex w-50 " id="searchForm">
+  <input
+    id="searchInput"
+    class="form-control "
+    type="search"
+    placeholder="ابحث عن رواية..."
+  />
+  <button class="btn btn-outline-light m-2 " type="submit">
+    Search
+  </button>
+</form>
         </div>
       </div>
     </nav>
@@ -87,494 +90,431 @@
     <!--book card-->
     <section id="books" class="container my-5">
       <div class="row g-4">
-        <!-- card1-->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover card-img-top"
-                  src="photo/الرومانسية/احبك اكثر.png"
-                />
-                <div class="book-info">
-                  <div class="rating">
-                    <div class="rating mb-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                      <span>4.9</span>
-                    </div>
-                  </div>
-                  <!--name book-->
-                  <h5 class="mb-1">احبك اكثر</h5>
-                  <!--name some one-->
-                  <small> عمرو المنوفي </small>
-                  <button
-                    class="btn btn-danger rounded-pill mt-2 flip-btn mb-5"
-                  >
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "حين يصبح وجودك سببًا لطمأنينتي، أدرك أن الحب لم يعد اختيارًا،
-                  بل وطنًا."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
+<div class="row">
+  <!-- card 1 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="احبك-اكثر">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img
+            class="book-cover card-img-top"
+            src="photo/الرومانسية/احبك اكثر.png"
+            alt="احبك اكثر"
+          />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
             </div>
+            <h5 class="mb-1">احبك اكثر</h5>
+            <small>عمر المنوفي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn mb-5">
+              اقرأ الاقتباس
+            </button>
           </div>
         </div>
-        <!--card 2 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img class="book-cover" src="photo/الرومانسية/اصابك عشق.png" />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.9</span>
-                  </div>
-                  <h5>اصابك عشق</h5>
-                  <small>اسماء السيد</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "بعض القلوب لا تُهزم إلا حين تقع في حبٍ لم تكن تنتظره."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card3 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/الاسود يليق بك.png"
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.5</span>
-                  </div>
-                  <!--name book-->
-                  <h5>الاسود يليق بك</h5>
-                  <!--name some one-->
-                  <small>أحلام مستغانمي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "الكبرياء لا يمنع الحب، لكنه يختبر صدقه في كل مرة."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 4 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/اين الملتقي.png"
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                  </div>
-                  <!--name book-->
-                  <h5>اين الملتقي</h5>
-                  <!--name some one-->
-                  <small>خوله حمدي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "كل الطرق التي فرقتنا كانت تمهد للقاءٍ يعرفه القدر."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card5 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/غربيه الياسمين.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.5</span>
-                  </div>
-                  <h5>غربة الياسمين</h5>
-                  <small>خولة حمدي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "الغربة ليست في المكان، بل في أن تبحث عمّن يشبه قلبك فلا
-                  تجده."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 6 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/فلتغفر لي.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.7</span>
-                  </div>
-                  <h5>فلتغفري</h5>
-                  <small>أثير عبد الله النشمي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "أثقل الاعتذارات تلك التي تأتي بعد أن يرحل كل شيء."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 7 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/في بيتنا رجل.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.9</span>
-                  </div>
-                  <h5>في بيتنا رجل</h5>
-                  <small>احسان عبد القدوس</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "الحرية تستحق أن ندفع ثمنها، مهما بدا الطريق شاقًا."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 8 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/في قلبي.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.5</span>
-                  </div>
-                  <h5>في قلبي انثي عبريه</h5>
-                  <small>خولة حمدي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "الإيمان الصادق قادر على أن يجمع قلوبًا فرقتها كل الحدود."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 9 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/لن اسالك.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.9</span>
-                  </div>
-                  <h5>لن اسالك</h5>
-                  <small>شريف علي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "ليست كل الأسئلة تحتاج إلى إجابة، فبعض الصمت يكشف الحقيقة."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 10 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/ماجدولين.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.9</span>
-                  </div>
-                  <h5>ماجدولين</h5>
-
-                  <small>مصطفي لطفي المنفلوطي</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "الحب النقي يبقى خالدًا، حتى وإن غابت عنه النهايات السعيدة."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 11 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/مالا نبوح .png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.9</span>
-                  </div>
-                  <h5>مالا نبوح به</h5>
-                  <small>ساندرا سراج</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "أكثر المشاعر صدقًا هي تلك التي نعجز عن البوح بها."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--card 12 -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="book">
-            <div class="book-inner">
-              <div class="book-front">
-                <img
-                  class="book-cover"
-                  src="photo/الرومانسية/هبتا.png"
-                  alt=""
-                />
-                <div class="book-info">
-                  <div class="rating mb-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <span>4.9</span>
-                  </div>
-                  <h5>هيبتا</h5>
-                  <small>محمد صادق</small>
-                  <button class="btn btn-danger rounded-pill mt-2 flip-btn">
-                    اقرأ الاقتباس
-                  </button>
-                </div>
-              </div>
-              <div class="book-back">
-                <h4>اقتباس</h4>
-                <blockquote>
-                  "كل قصة حب تبدأ بحلم، لكنها تنجو فقط إذا تعلم أصحابها كيف
-                  يفهمون بعضهم."
-                </blockquote>
-                <button
-                  class="btn btn-outline-light rounded-pill mt-3 back-btn"
-                >
-                  رجوع
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "حين يصبح وجودك سببًا لطمأنينتي، أدرك أن الحب لم يعد اختيارًا، بل وطنًا."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- card 2 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="اصابك-عشق">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/اصابك عشق.png" alt="اصابك عشق" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
+            </div>
+            <h5>اصابك عشق</h5>
+            <small>اسماء السيد</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "بعض القلوب لا تُهزم إلا حين تقع في حبٍ لم تكن تنتظره."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 3 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="الاسود-يليق-بك">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/الاسود يليق بك.png" alt="الاسود يليق بك" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.5</span>
+            </div>
+            <h5>الاسود يليق بك</h5>
+            <small>أحلام مستغانمي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "الكبرياء لا يمنع الحب، لكنه يختبر صدقه في كل مرة."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 4 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="اين-الملتقي">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/اين الملتقي.png" alt="اين الملتقي" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5.0</span>
+            </div>
+            <h5>اين الملتقي</h5>
+            <small>خوله حمدي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "كل الطرق التي فرقتنا كانت تمهد للقاءٍ يعرفه القدر."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 5 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="غربة-الياسمين">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/غربيه الياسمين.png" alt="غربة الياسمين" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.5</span>
+            </div>
+            <h5>غربة الياسمين</h5>
+            <small>خولة حمدي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "الغربة ليست في المكان، بل في أن تبحث عمّن يشبه قلبك فلا تجده."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 6 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="فلتغفري">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/فلتغفر لي.png" alt="فلتغفري" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.7</span>
+            </div>
+            <h5>فلتغفري</h5>
+            <small>أثير عبد الله النشمي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "أثقل الاعتذارات تلك التي تأتي بعد أن يرحل كل شيء."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 7 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="في-بيتنا-رجل">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/في بيتنا رجل.png" alt="في بيتنا رجل" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
+            </div>
+            <h5>في بيتنا رجل</h5>
+            <small>احسان عبد القدوس</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "الحرية تستحق أن ندفع ثمنها، مهما بدا الطريق شاقًا."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 8 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="في-قلبي-انثى-عبرية">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/في قلبي.png" alt="في قلبي انثى عبرية" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.5</span>
+            </div>
+            <h5>في قلبي انثى عبرية</h5>
+            <small>خولة حمدي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "الإيمان الصادق قادر على أن يجمع قلوبًا فرقتها كل الحدود."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 9 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="لن-اسالك">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/لن اسالك.png" alt="لن اسالك" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
+            </div>
+            <h5>لن اسالك</h5>
+            <small>شريف علي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "ليست كل الأسئلة تحتاج إلى إجابة، فبعض الصمت يكشف الحقيقة."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 10 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="ماجدولين">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/ماجدولين.png" alt="ماجدولين" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
+            </div>
+            <h5>ماجدولين</h5>
+            <small>مصطفي لطفي المنفلوطي</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "الحب النقي يبقى خالدًا، حتى وإن غابت عنه النهايات السعيدة."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 11 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="مالا-نبوح-به">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/مالا نبوح .png" alt="مالا نبوح به" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
+            </div>
+            <h5>مالا نبوح به</h5>
+            <small>ساندرا سراج</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "أكثر المشاعر صدقًا هي تلك التي نعجز عن البوح بها."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 12 -->
+  <div class="col col-12 col-md-6 col-lg-3" id="هيبتا">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">
+          <img class="book-cover card-img-top" src="photo/الرومانسية/هبتا.png" alt="هيبتا" />
+          <div class="book-info">
+            <div class="rating mb-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>4.9</span>
+            </div>
+            <h5>هيبتا</h5>
+            <small>محمد صادق</small>
+            <button class="btn btn-danger rounded-pill mt-2 flip-btn">
+              اقرأ الاقتباس
+            </button>
+          </div>
+        </div>
+        <div class="book-back">
+          <h4>اقتباس</h4>
+          <blockquote>
+            "كل قصة حب تبدأ بحلم، لكنها تنجو فقط إذا تعلم أصحابها كيف يفهمون بعضهم."
+          </blockquote>
+          <button class="btn btn-outline-light rounded-pill mt-3 back-btn">
+            رجوع
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       <!-- scrollTopBtn -->
       <button id="scrollTopBtn">
         <i class="fa-solid fa-arrow-up"></i>

@@ -10,8 +10,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
-}
-/* start of index */
+} /* start of index */
 /* start of heder */
 .bg-section {
   background-color: #6e5f9a;
@@ -25,8 +24,7 @@ html {
 }
 .navbar .navbar-brand:hover {
   color: #0feada !important;
-}
-/* Quote Section */
+} /* Quote Section */
 .hero-slider {
   position: relative;
   width: 100%;
@@ -105,13 +103,8 @@ html {
   font-weight: bold;
   text-align: center;
 }
-
 /* end of heder */
-
-/*=========================
-      BOOK SECTIONS
-=========================*/
-
+/*========================= BOOK SECTIONS =========================*/
 .section-heading {
   max-width: 700px;
   margin: auto;
@@ -138,9 +131,7 @@ html {
 .hero {
   padding-top: 140px;
   padding-bottom: 60px;
-}
-/*========== Cards ==========*/
-
+} /*========== Cards ==========*/
 .book-card {
   border: none;
   border-radius: 18px;
@@ -189,8 +180,7 @@ html {
   color: #2a0081 !important;
   font-weight: bolder;
   font-size: 20px;
-}
-/* end of index */
+} /* end of index */
 /* start of card */
 .book {
   perspective: 1200px;
@@ -273,7 +263,6 @@ html {
   text-align: center;
   padding: 25px;
 }
-
 .book-back h4 {
   margin: 0;
 }
@@ -299,8 +288,7 @@ html {
 }
 .back-btn {
   width: 100%;
-}
-/* end of card */
+} /* end of card */
 /* scrollTopBtn */
 #scrollTopBtn {
   position: fixed;
@@ -319,8 +307,26 @@ html {
   transition: 0.3s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
 #scrollTopBtn:hover {
   background: #bb2d3b;
   transform: translateY(-3px);
+}
+.highlight {
+  animation: flash 1s ease-in-out 3;
+
+  border-radius: 15px;
+}
+
+@keyframes flash {
+  0% {
+    box-shadow: 0 0 0px #dc3545;
+  }
+
+  50% {
+    box-shadow: 0 0 25px #dc3545;
+  }
+
+  100% {
+    box-shadow: 0 0 0px #dc3545;
+  }
 }
