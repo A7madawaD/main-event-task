@@ -31,6 +31,7 @@ scrollBtn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+// Search
 const books = [
   // Romantic
   { name: "احبك اكثر", page: "romantic.html" },
@@ -73,7 +74,61 @@ const books = [
   { name: "قضية عنب الثعلب", page: "crime.html" },
   { name: "قضية لوز مر", page: "crime.html" },
   { name: "مخالب القط", page: "crime.html" },
+  // أضف هذه الكتب داخل مصفوفة const books = [...] في ملف الـ JS لديك:
+
+  // 👻 قسم الرعب
+  { name: "IT", page: "horror.html" },
+  { name: "ارض السافلين", page: "horror.html" },
+  { name: "أرض السافلين", page: "horror.html" },
+  { name: "خلف ستار الموت", page: "horror.html" },
+  { name: "اسطوره النداهة", page: "horror.html" },
+  { name: "أسطورة النداهة", page: "horror.html" },
+  { name: "لوكانده بير الوطاويط", page: "horror.html" },
+  { name: "لوكاندة بير الوطاويط", page: "horror.html" },
+  { name: "ابتسم فانت ميت", page: "horror.html" },
+  { name: "ابتسم فأنت ميت", page: "horror.html" },
+  { name: "الناسخ", page: "horror.html" },
+  { name: "انتيخريستوس", page: "horror.html" },
+
+  // 🔮 قسم الفانتازيا (fantasy.html)
+  { name: "أرض زيكولا", page: "fantasy.html" },
+  { name: "ارض زيكولا", page: "fantasy.html" },
+  { name: "جنة في بيت الدودو", page: "fantasy.html" },
+  { name: "امارييتا", page: "fantasy.html" },
+  { name: "اماريتيا", page: "fantasy.html" },
+  { name: "کیارا", page: "fantasy.html" },
+  { name: "توك توك الجحيم", page: "fantasy.html" },
+  { name: "داو", page: "fantasy.html" },
+  { name: "ظل النعيم", page: "fantasy.html" },
+  // 🌱 قسم تطوير الذات
+  { name: "انت اقوي", page: "development.html", id: "انت-اقوي" },
+  { name: "أنت أقوى", page: "development.html", id: "انت-اقوي" },
+
+  { name: "احببت وغدا", page: "development.html", id: "احببت-وغدا" },
+  { name: "أحببت وغداً", page: "development.html", id: "احببت-وغدا" },
+
+  { name: "لعبه التعلم", page: "development.html", id: "لعبه-التعلم" },
+  { name: "لعبة التعلم", page: "development.html", id: "لعبه-التعلم" },
+
+  {
+    name: "علاج الاحتراق الوظيفي",
+    page: "development.html",
+    id: "علاج-الاحتراق-الوظيفي",
+  },
+
+  { name: "فن الكتابه", page: "development.html", id: "فن-الكتابه" },
+  { name: "فن الكتابة", page: "development.html", id: "فن-الكتابه" },
+
+  { name: "تنهيدة", page: "development.html", id: "تنهيدة" },
+  { name: "تنهيده", page: "development.html", id: "تنهيدة" },
+
+  { name: "انت مدين لنفسك", page: "development.html", id: "انت-مدين-نفسك" },
+  { name: "أنت مدين لنفسك", page: "development.html", id: "انت-مدين-نفسك" },
+
+  { name: "فن تفويت الفرص", page: "development.html", id: "فن-تفويت-الفرص" },
+  { name: "ن تفويت الفرص", page: "development.html", id: "فن-تفويت-الفرص" },
 ];
+
 // ==========================================
 // 1. مصفوفة جميع الكتب (تأكد من اسم صفحة الفانتازيا الصحيحة)
 // ==========================================
@@ -124,30 +179,25 @@ function highlightCard(query) {
   return found;
 }
 
-if (searchForm) {
-  searchForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+function searchBook(searchTerm) {
+  const cleanTerm = searchTerm.trim().toLowerCase();
 
-    const value = searchInput.value.trim();
-    if (!value) return;
+  if (!cleanTerm) return;
 
-    const foundInCurrentPage = highlightCard(value);
+  // البحث عن الكتاب (سواء كان الاسم يطابق أو يحتوي على الكلمة)
+  const foundBook = books.find((book) =>
+    book.name.toLowerCase().includes(cleanTerm),
+  );
 
-    if (!foundInCurrentPage) {
-      // 3. البحث في المصفوفة العامة للكتب في حال وجود صفحات متعددة
-      const cleanValue = normalizeText(value);
-      const matchedBook = books.find((book) =>
-        normalizeText(book.name).includes(cleanValue),
-      );
-
-      if (matchedBook) {
-        const bookId = matchedBook.name.replace(/\s+/g, "-");
-        window.location.href = `${matchedBook.page}#${encodeURIComponent(bookId)}`;
-      } else {
-        alert("الرواية غير موجودة");
-      }
+  if (foundBook) {
+    if (foundBook.id) {
+      window.location.href = `${foundBook.page}#${foundBook.id}`;
+    } else {
+      window.location.href = foundBook.page;
     }
-  });
+  } else {
+    alert("الرواية غير موجودة!");
+  }
 }
 
 // التمرير التلقائي للرواية عند التحويل من صفحة أخرى
