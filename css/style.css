@@ -33,20 +33,16 @@ html {
   height: 90vh;
   overflow: hidden;
 }
-
 .hero-slider .carousel,
 .hero-slider .carousel-inner,
 .hero-slider .carousel-item {
   height: 100%;
 }
-
 .hero-slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   filter: blur(2px);
-
   transform: scale(1.08);
 }
 .hero-slider::after {
@@ -57,32 +53,22 @@ html {
 }
 .hero-content {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   z-index: 5;
-
   color: white;
-
   text-align: center;
-
   width: 90%;
 }
 .hero-content h1 {
   font-size: 58px;
-
   font-weight: bold;
-
   margin-bottom: 25px;
 }
 .hero-content p {
   font-size: 24px;
-
   margin-bottom: 35px;
-
   color: #eee;
 }
 .card-img-top {
@@ -94,7 +80,6 @@ html {
 }
 .hero-content .btn {
   padding: 12px 40px;
-
   font-size: 20px;
 }
 .nav-link {
@@ -120,21 +105,7 @@ html {
   font-weight: bold;
   text-align: center;
 }
-/*  Responsive */
-@media (max-width: 768px) {
-  .quote-box {
-    padding: 25px;
-  }
-  .quote-box h3 {
-    font-size: 1.5rem;
-  }
-  .quote-box p {
-    font-size: 1rem;
-  }
-  .carousel-item img {
-    height: 250px;
-  }
-}
+
 /* end of heder */
 
 /*=========================
@@ -145,19 +116,16 @@ html {
   max-width: 700px;
   margin: auto;
 }
-
 .section-title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
-
 .section-desc {
   color: #6c757d;
   font-size: 1.1rem;
   line-height: 1.8;
 }
-
 .section-heading::after {
   content: "";
   width: 90px;
@@ -181,12 +149,10 @@ html {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: 0.35s ease;
 }
-
 .book-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
 }
-
 .book-card img {
   width: 70%;
   height: 250px;
@@ -195,33 +161,27 @@ html {
   padding: 10px;
   transition: 0.4s;
 }
-
 .book-card:hover img {
   transform: scale(1.06);
 }
-
 .book-card .card-body {
   padding: 1.4rem;
 }
-
 .book-card .card-title {
   font-size: 1.2rem;
   font-weight: 700;
   color: #2c3e50;
 }
-
 .book-card .card-text {
   color: #666;
   font-size: 0.95rem;
   line-height: 1.8;
 }
-
 .book-card .btn {
   width: 100%;
   border-radius: 30px;
   margin-top: 15px;
 }
-
 .book-card .btn:hover {
   transform: translateY(-2px);
 }
@@ -231,13 +191,11 @@ html {
   font-size: 20px;
 }
 /* end of index */
-
 /* start of card */
 .book {
   perspective: 1200px;
   height: 560px;
 }
-
 .book-inner {
   position: relative;
   width: 100%;
@@ -245,7 +203,6 @@ html {
   transition: 0.8s;
   transform-style: preserve-3d;
 }
-
 .book-front,
 .book-back {
   position: absolute;
@@ -255,7 +212,6 @@ html {
   backface-visibility: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
 }
-
 .book-front img {
   width: 85%;
   height: 320px;
@@ -263,7 +219,6 @@ html {
   display: block;
   margin: 15px auto;
 }
-
 .book-info {
   height: 185px;
   display: flex;
@@ -273,24 +228,21 @@ html {
   text-align: center;
   padding: 15px 20px;
 }
-
 .rating {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
-  color: #ffc107; /* اللون الذهبي */
+  color: #ffc107;
   font-size: 18px;
   margin-bottom: 15px;
 }
-
 .rating span {
   color: #444;
   font-weight: bold;
   margin-right: 8px;
   font-size: 16px;
 }
-
 .book-info h5 {
   height: 50px;
   display: flex;
@@ -300,7 +252,6 @@ html {
   font-size: 1.15rem;
   font-weight: 700;
 }
-
 .book-info small {
   height: 24px;
   display: flex;
@@ -308,21 +259,17 @@ html {
   color: #777;
   margin: 0;
 }
-
 .flip-btn {
   width: 100%;
   margin-top: auto;
 }
-
 .book-back {
   background: #212529;
   color: #fff;
   transform: rotateY(180deg);
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   text-align: center;
   padding: 25px;
 }
@@ -330,17 +277,14 @@ html {
 .book-back h4 {
   margin: 0;
 }
-
 .book-back .book-name {
   font-size: 20px;
   font-weight: bold;
 }
-
 .book-back .author {
   color: #cfcfcf;
   margin-bottom: 10px;
 }
-
 .book-back blockquote {
   flex: 1;
   display: flex;
@@ -353,22 +297,20 @@ html {
   border-right: 4px solid #dc3545;
   color: #eee;
 }
-
 .back-btn {
   width: 100%;
 }
-
 /* end of card */
 /* scrollTopBtn */
 #scrollTopBtn {
   position: fixed;
   bottom: 25px;
-  left: 25px; /* لو الموقع عربي */
+  left: 25px;
   width: 50px;
   height: 50px;
   border: none;
   border-radius: 50%;
-  background: #dc3545;
+  background: #05079b;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
